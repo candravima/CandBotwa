@@ -222,7 +222,7 @@ try {
 	    baterai.isCharge = json[2][0][1].live
 	    })
 	    if (multi){
-		    var prefix = /^[°zZ#$@*+,.?=''():√%!¢£¥€π¤ΠΦ_&><`™©®Δ^βα¦|/\\©^]/.test(cmd) ? cmd.match(/^[°zZ#$@*+,.?=''():√%¢£¥€π¤ΠΦ_&><!`™©®Δ^βα¦|/\\©^]/gi) : '.'
+		    var prefix = /^[°zZ#$@*+,.?=''():√%!¢£¥€π¤ΠΦ_&><`™©®Δ^βα¦|/\\©^]/.test(cmd) ? cmd.match(/^[°zZ#$@*+,.?=''():√%¢£¥€π¤ΠΦ_&><!`™©®Δ^βα¦|/\\©^]/gi) : '#'
         } else {
             if (nopref){
                 prefix = ''
@@ -1236,13 +1236,13 @@ menu =`╭─❒ 「 INFO 」 ❒──❒
 ├ ${prefix}tospam [ _reply audio/sticker/image|jumlah_ ]
 ├ ${prefix}sharelock [ _teks1|teks2_ ]
 └─────────────────❒`
-sendButLocation(from, `${menu}`, "H E L G A 右", {jpegThumbnail:gambar,name:""}, [{buttonId:`owner`,buttonText:{displayText:'👑OWNER'},type:1},{buttonId:`script`,buttonText:{displayText:'📒SCRIPT'},type:1}], {contextInfo: { mentionedJid: [otod]}})
+sendButLocation(from, `${menu}`, "OniChann", {jpegThumbnail:gambar,name:""}, [{buttonId:`owner`,buttonText:{displayText:'👑OWNER'},type:1},{buttonId:`script`,buttonText:{displayText:'📒SCRIPT'},type:1}], {contextInfo: { mentionedJid: [otod]}})
 break
 case 'command':
  stod = `${sender}`
  listMsg = {
  buttonText: 'LIST MENU',
- footerText: '*_© H E L G A_*',
+ footerText: '*_© CANDD_*',
  description: `Hai kak @${stod.split('@')[0]}, Silahkan pilih menu disini`,
  sections: [
                      {
@@ -1818,19 +1818,19 @@ break
 		case 'sc':
 		case 'sourcecode':
 		anu =`╭─❒ SCRIPT
-│◦➛Base : Denis Putra
-│◦➛Recode : Helga Ilham
+│◦➛Base : CandraVima
+│◦➛Recode : CandraVima
 │
 └──────[ GITHUB ]──────❒
   │◦➛Script Ory :
-  │◦➛https://github.com/HelgaIlham
+  │◦➛https://github.com/candravima
   │◦➛Script Recode : 
-  │◦➛https://github.com/HelgaIlham
+  │◦➛https://github.com/candravima
   └──────────────────❒`
 const buttons = [{buttonId: `menu`, buttonText: {displayText: 'BACK➡️'}, type: 1},{buttonId: `owner`, buttonText: {displayText: 'OWNER👤'}, type: 1}]
 const buttonMessage = {
     contentText: `${anu}`,
-    footerText: '*_©H E L G A_*',
+    footerText: '*_©CANDD_*',
     buttons: buttons,
     headerType: 1
 }
